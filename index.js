@@ -5,7 +5,7 @@ const cors = require('cors');
 // Express app setup
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://to-dolist24.netlify.app'));
 
 // MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/', {
